@@ -1,11 +1,12 @@
 const express = require("express");
 const router = express.Router();
 const {
-  openSuspendService,
-  getStatusAccountService,
+  getInfoUser,
 } = require("../service/visaService");
 
-router.post("/status", getStatusAccountService);
-router.post("/open", openSuspendService);
+router.post("/user", getInfoUser);
+
+
+
 
 module.exports = router;
